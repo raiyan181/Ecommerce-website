@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.container .logo{
+     position: absolute;
+     top: 35px;
+     left: 70px;
+     text-shadow: color(srgb rgb(0, 0, 0) rgb(31, 32, 31) rgb(25, 25, 26));
+     letter-spacing: 5px;
+     text-transform: uppercase;
+     color: black;
+     font-weight: bold;
+     font-size: 30px;
+     text-shadow: -0px 0px 1px ;
+}
+.searcharea{
+    position: fixed;
+    left: 1100px;
+    top: 35px;
+    border: 1px solid white;
+}
+.searcharea input{
+    border-radius: 30px;
+    width: 170px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 10px;
+    box-shadow: 0 0 10px #d1d1d1;
+    text-align: center;
+}
+.searcharea .icon i{
+    position: fixed;
+    top: 46px;
+    right: 210px;
+}
+.searcharea input .placeholder{
+    color: #262626;
+    font-family: poppins;
+    font-weight: 400px;
+}
+.section1 img{
+    position: absolute;
+    left: 2%;
+    top: 26%;
+    height: 400px;
+    width: 900px;
+}
+.section1button{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-90% -50%);
+}
+.section1button h1{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 75px;
+position: relative;
+top: -75px;
+left: -200px;
+}
+.section1button h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    font-size: 69px;
+    top: -125px;
+    left: -120px;
+}
+.section1button h1 span{
+    color: rgb(255, 146, 164);
+}
+.section1button h2 span{
+    color: rgb(255, 146, 164);
+}
+.section1button .btn{
+    position: relative;
+    top: -160px;
+    left: -190px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 25px #aaaaaa;
+    background-color: #262626;
+    color: white;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.section1button .btn2{
+    position: relative;
+    top: -209px;
+    left: 10px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 25px #aaaaaa;
+    background-color: #262626;
+    color: white;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.section1button .btn:hover{
+    transition: all ease 1s;
+    background-color: aqua;
+    opacity: 0.8;
+}
+.section1button .btn2:hover{
+    transition: all ease 1s;
+    background-color: aqua;
+    opacity: 0.8;
+}
+.iconarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 15px;
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #fafafa;
+    border: none;
+    padding: 15px;
+    grid-gap: 10px;
+    box-sizing: border-box;
+    box-shadow: -4px 2px 7px #d1d1d1;
+
+}
+.iconarea a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.iconarea .a1{
+    text-decoration: none;
+    color: red;
+}
+.iconarea .a2{
+    text-decoration: none;
+    color: red;
+}
+.iconarea .a4{
+    text-decoration: none;
+    color: rgb(27, 137, 226);
+}
+.iconarea .a3{
+    text-decoration: none;
+    color: rgb(27, 137, 226);;
+}
+.iconarea a:hover{
+    transition: all ease .5s;
+    color: #262626;
+    opacity: .8;
+}
+.productsec{
+    width: 85%;
+    border: none;
+    box-shadow: 0 0 30px #c4c4c4;
+    display: flex;
+    background-size: 1000px;
+    position: absolute;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 630px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+.productsec h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px #a5a5a5;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700px;
+    font-size: 2rem;
+    color: #323523;
+}
+.productsec h3 span{
+    color: rgb(151, 61, 255);
+}
+.product{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+
+}
+.productbox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.productbox img{
+height: 180px;
+}
+.productbox p{
+    text-align: center;
+    opacity: .5;
+    font-size: 18px;
+    font-weight: 500px;
+}
+.productbox a{
+    font-size: 1rem;
+    color: rgb(20, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.buybtn{
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: translate(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background:linear-gradient( 126deg ,rgb(65, 162, 252), rgb(247, 130, 189));
+    color: #ffffff;
+    display: none;
+    animation: fade 0.2s;
+}
+.productbox:hover .buybtn{
+    display: flex;
+}
+.productbox:hover{
+    transition: all ease .3s;
+box-shadow: 0 0 10px #aaaaaa;
+background-color: #ffffff;
+transform: scale(1.1);
+}
+.productbox:hover a:last-child{
+    transition: all ease .5s;
+    color: #ffffff;
+}
+.About{
+    display: flex;
+     width: 85%;
+      margin: 50px;
+       justify-content: space-around;
+         align-items: center;
+         padding: 30px;
+         position: absolute;
+          margin-top: 1500px;
+}
+.aboutbox{
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    width: 500px;
+    display: flex;
+    margin-left: 230px;
+    margin-top: -290px;
+}
+.aboutbox p{
+    opacity: .7;
+    font-size: 1rem;
+    margin-top: -20px;
+    display: flex;
+    margin-left: -290px;
+}
+.aboutbox h1{
+    font-size: 40px;
+    display: flex;
+    margin-left: -290px;
+}
+.aboutbox h4{
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: -290px;
+}
+.notification{
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    margin-top: 1900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0,0.3);
+}
+.notificationinput input{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #262626;
+    width: 430px;
+    height: 50px;
+    text-align:start;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.notificationbtn{
+    margin-left: -90px;
+    background-color: #262626;
+    color: white;
+    border-radius: 50px;
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.notificationbtn:hover{
+    background-color: rgb(151, 61, 255);
+    transition: all ease .8s;
+    transform: scale(1.1);
+    opacity: .8;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 2170px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+footer p{
+    padding: 8px;
+}
+.hr1{
+    margin-top: -10px;
+
+}
+    </style>
+    <script src="https://kit.fontawesome.com/e2911c4480.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiyan Programmer Ecommerce</title>
+
+    <!--Header section start-->
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            Raiyan-Programmer
+        </div>
+        <div class="searcharea">
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+        <div class="section1"><img src="img/undraw_add_color_19gv.svg" alt=""></div>
+        <div class="section1button">
+            <h1>su<span class="color">mm</span>er</h1>
+            <h2>collect<span class="color2">ion</span></h2>
+            <button class="btn">Details</button>
+            <button class="btn2">Buy now</button>
+        </div>
+        <div class="iconarea">
+            <a class="a3" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="a1" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="a4" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="a2" href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+      <!--Header section done-->
+
+
+<!--collection section start-->
+    <section class="productsec">
+        <h3>New <span>Bag</span> collection</h3>
+        <div class="product">
+            <div class="productbox">
+                <img src="img/undraw_career_progress_ivdb.svg" alt="">
+                <p>Black genuine leather bags.</p>
+                <a href="#">$25</a>
+                <a href="#" class="buybtn">add to cart</a>
+                </div>
+                <div class="productbox">
+                    <img src="img/undraw_heatmap_uyye.svg" alt="">
+                    <p>Red Arsenal jersey</p>
+                    <a href="#">$25</a>
+                    <a href="#" class="buybtn">add to cart</a>
+                    </div>
+                    <div class="productbox">
+                        <img src="img/undraw_in_no_time_6igu.svg" alt="">
+                        <p>Catfood</p>
+                        <a href="#">$50</a>
+                        <a href="#" class="buybtn">add to cart</a>
+                        </div>
+                        <div class="productbox">
+                            <img src="img/undraw_shopping_app_flsj.svg" alt="">
+                            <p>Laptop-AR701</p>
+                            <a href="#">$75</a>
+                            <a href="#" class="buybtn">add to cart</a>
+                            </div>
+                            <div class="productbox">
+                                <img src="img/undraw_smartwatch_74tv.svg" alt="">
+                                <p>Apple smart watch</p>
+                                <a href="#">$100</a>
+                                <a href="#"
+                                class="buybtn">add to cart</a>
+                                </div>
+                                <div class="productbox">
+                                    <img src="img/undraw_Successful_purchase_re_mpig.svg" alt="">
+                                    <p>White shoes.</p>
+                                    <a href="#">$125</a>
+                                    <a href="#" class="buybtn">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Collection section done-->
+
+    <section class="About">
+<div class="aboutbox">
+    <h1>About our platform</h1>
+    <h4>Small E-commerce platform by raiyan.dev <br> 2024 new arrivals mini messenger <br> <a href=""><span>Buy now</span></a></h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit <br> saepe asperiores neque repellat sint minus rerum perferendis suscipit <br> autem, mollitia dolor dignissimos tempore consequatur modi, <br> exercitationem est iste officia eveniet doloremque soluta. <br> Unde pariatur possimus debitis alias ipsa at facilis quod
+        <br> numquam, et fugit tempore magnam quam! Aperiam, cum voluptatibus!</p>
+    <div class="aboutbox">
+        <img src="img/undraw_heatmap_uyye.svg" alt="">
+    </div>
+</div>
+    </section>
+
+    <!--About done-->
+
+    <section class="notification">
+        <h1>Subscribe for new product notification</h1>
+        <div class="notificationinput">
+            <input type="email" placeholder="example@gmail.com"><a href="#" class="notificationbtn">SEND</a>
+        </div>
+    </section>
+<hr class="hr1">
+    <!--footer start-->
+    <footer>
+        <p>@All rights reserved by Raiyan-Programmer</p>
+    </footer>
+</body>
+</html>
